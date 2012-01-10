@@ -94,6 +94,8 @@ class HelperController extends Controller
         if ($uniqid) {
             $admin->setUniqid($uniqid);
         }
+        
+        $admin->setSubject($subject);
 
         $formBuilder = $admin->getFormBuilder($subject);
 
